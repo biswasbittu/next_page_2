@@ -1,9 +1,14 @@
+import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 const App = () => {
   return (
-    <h1 >
-      Hello world!
-    </h1>
+    <>
+    <Header/>
+     <Outlet/>
+     <Footer/>
+     </>
   );
 
 };
